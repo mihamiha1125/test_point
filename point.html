@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <title>ポイントページ</title>
+    <style>
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  /* background-color: aqua; */
+}
+
+.stamp-container {
+  position: relative;
+}
+
+.stamp-container img {
+  width: 66px;
+  border:  solid 1px black;
+  padding: 2%;
+}
+.stamp-row {
+  text-align: left;
+}
+button {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: 5%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="stamp-container">
+        <!-- スタンプを表示する場所 -->
+      </div>
+      <button id="stampButton">スタンプを押す</button>
+            <script src="./js/script.js"></script> <!-- JavaScriptファイルを読み込む -->
+</body> 
+</html>
